@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@100;200;400;500&display=swap');
+@import 'config';
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: $bg-color;
+    font-family: "Barlow", sans-serif;
+    line-height: 1.7;
+}
+
+.top-nav{
+    background: $main-color;
+
+    .container{
+        padding: 5px;
+    }
+
+    p{
+        display: inline-block;
+        margin: 0 10px 0 16px;
+        @include transition-ease;
+
+        &:hover{
+            cursor: pointer;
+            color: #fff;
+        }
+    }
+
+    i, span{
+        vertical-align: middle;
+    }
+}
+
+.social-links{
+    a{
+        width: 34px;
+        height: 34px;
+        background: rgb(255, 255, 255, 0.4);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 50%;
+        font-size: 20px;
+        @include transition-ease;
+
+
+        &:hover{
+            color: $main-color;
+            background-color: #fff;
+        }
+    }
+}
+
+.navbar{
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+    z-index: 99;
+}
+
+.collapse{
+    .btn{
+        padding: 9px 24px;
+        color: #fff;
+        background-color: $main-color;
+    }
+}
+
+.home-slider{
+    .slider-item-1{
+        background: linear-gradient(rgba(9, 32, 50, 0.4),rgba(9, 32, 50, 0.4)), url('/images/bg-1.jpg');
+    }
+
+    .slider-item-2{
+        background: linear-gradient(rgba(9, 32, 50, 0.4),rgba(9, 32, 50, 0.4)), url('/images/bg-2.jpg');
+    }
+
+    .slider-item-3{
+        background: linear-gradient(rgba(9, 32, 50, 0.4),rgba(9, 32, 50, 0.4)), url('/images/bg-3.jpg');
+    }
+
+    .slider-item1, .slider-item-2, .slider-item-3{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .title{
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    h1{
+        font-weight: 700;
+    }
+
+    .title, h1{
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    p{
+        color: #fff;
+    }
+
+    .fa-chevron-left{
+        left: 5px;
+    }
+
+    .fa-chevron-right{
+        right: 5px;
+    }
+
+    .fa-chevron-left, .fa-chevron-right{
+        position: absolute;
+        top: 50%;
+        width: 40px !important;
+        height: 40px !important;
+        display: grid;
+        place-items: center;
+        background-color: lighten($main-color, 10%);
+        border-radius: 50%;
+    }
+}

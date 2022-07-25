@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@100;200;400;500&display=swap");
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700 !important;
+  color: #17252F;
+}
+
+a {
+  color: #17252F;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Barlow", sans-serif;
+  line-height: 1.7;
+}
+
+.top-nav {
+  background: #fcb900;
+}
+.top-nav .container {
+  padding: 5px;
+}
+.top-nav p {
+  display: inline-block;
+  margin: 0 10px 0 16px;
+  transition: all 0.3s ease;
+}
+.top-nav p:hover {
+  cursor: pointer;
+  color: #fff;
+}
+.top-nav i, .top-nav span {
+  vertical-align: middle;
+}
+
+.social-links a {
+  width: 34px;
+  height: 34px;
+  background: rgba(255, 255, 255, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.social-links a:hover {
+  color: #fcb900;
+  background-color: #fff;
+}
+
+.navbar {
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
+  z-index: 99;
+}
+
+.collapse .btn {
+  padding: 9px 24px;
+  color: #fff;
+  background-color: #fcb900;
+}
+
+.home-slider .slider-item-1 {
+  background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url("/images/bg-1.jpg");
+}
+.home-slider .slider-item-2 {
+  background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url("/images/bg-2.jpg");
+}
+.home-slider .slider-item-3 {
+  background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url("/images/bg-3.jpg");
+}
+.home-slider .slider-item1, .home-slider .slider-item-2, .home-slider .slider-item-3 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.home-slider .title {
+  font-size: 16px;
+  font-weight: 600;
+}
+.home-slider h1 {
+  font-weight: 700;
+}
+.home-slider .title, .home-slider h1 {
+  color: #fff;
+  text-transform: uppercase;
+}
+.home-slider p {
+  color: #fff;
+}
+.home-slider .fa-chevron-left {
+  left: 5px;
+}
+.home-slider .fa-chevron-right {
+  right: 5px;
+}
+.home-slider .fa-chevron-left, .home-slider .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  width: 40px !important;
+  height: 40px !important;
+  display: grid;
+  place-items: center;
+  background-color: #ffc830;
+  border-radius: 50%;
+}/*# sourceMappingURL=main.css.map */
