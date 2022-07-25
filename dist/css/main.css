@@ -8,6 +8,7 @@ a {
   color: #17252F;
 }
 
+/*Resetting*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -20,6 +21,12 @@ body {
   line-height: 1.7;
 }
 
+/*Styling sections*/
+section {
+  margin-bottom: 80px;
+}
+
+/*Styling top navigation*/
 .top-nav {
   background: #fcb900;
 }
@@ -39,6 +46,7 @@ body {
   vertical-align: middle;
 }
 
+/*Styling top social links*/
 .social-links a {
   width: 34px;
   height: 34px;
@@ -56,6 +64,7 @@ body {
   background-color: #fff;
 }
 
+/*Styling Navbar*/
 .navbar {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
   z-index: 99;
@@ -67,6 +76,7 @@ body {
   background-color: #fcb900;
 }
 
+/*Styling the sliders*/
 .home-slider .slider-item-1 {
   background: linear-gradient(rgba(9, 32, 50, 0.4), rgba(9, 32, 50, 0.4)), url("/images/bg-1.jpg");
 }
@@ -110,4 +120,15 @@ body {
   place-items: center;
   background-color: #ffc830;
   border-radius: 50%;
+}
+
+/*About us*/
+.info-box {
+  display: flex;
+  align-items: center;
+}
+
+.info-box img {
+  width: 150px;
+  margin-right: 18px;
 }/*# sourceMappingURL=main.css.map */

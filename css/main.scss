@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Poppins:wght@100;200;400;500&display=swap');
 @import 'config';
+
+/*Resetting*/
 *
 {
     box-sizing: border-box;
@@ -13,6 +15,11 @@ body{
     line-height: 1.7;
 }
 
+/*Styling sections*/
+section{
+    margin-bottom: 80px;
+}
+/*Styling top navigation*/
 .top-nav{
     background: $main-color;
 
@@ -36,6 +43,7 @@ body{
     }
 }
 
+/*Styling top social links*/
 .social-links{
     a{
         width: 34px;
@@ -57,6 +65,7 @@ body{
     }
 }
 
+/*Styling Navbar*/
 .navbar{
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.08);
     z-index: 99;
@@ -70,6 +79,7 @@ body{
     }
 }
 
+/*Styling the sliders*/
 .home-slider{
     .slider-item-1{
         background: linear-gradient(rgba(9, 32, 50, 0.4),rgba(9, 32, 50, 0.4)), url('/images/bg-1.jpg');
@@ -125,4 +135,14 @@ body{
         background-color: lighten($main-color, 10%);
         border-radius: 50%;
     }
+}
+
+/*About us*/
+.info-box{
+    display: flex;
+    align-items: center;
+}
+.info-box img{
+    width: 150px;
+    margin-right: 18px;
 }
